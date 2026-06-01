@@ -3,66 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Films & Games | Biplab Mohanty</title>
+    <title>Credits | Biplab Mohanty</title>
     <style>
         :root { --bg: #ffffff; --text: #1a1a1a; --accent: #007bff; }
         body { margin: 0; font-family: sans-serif; background: #fff; color: #1a1a1a; }
         nav { display: flex; justify-content: flex-end; padding: 20px 5%; border-bottom: 1px solid #eee; }
         nav a { margin-left: 25px; text-decoration: none; color: #1a1a1a; font-weight: bold; font-size: 0.9rem; text-transform: uppercase; }
-        .container { max-width: 1200px; margin: auto; padding: 60px 5%; }
-        .experience-card { margin-bottom: 60px; border-left: 5px solid #1a1a1a; padding-left: 30px; }
-        .experience-card h2 { font-size: 2.5rem; margin: 0; text-transform: uppercase; }
-        .experience-card span { color: #888; font-weight: bold; font-size: 1.1rem; }
-        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px; }
-        .poster { background: #f4f4f4; border-radius: 8px; overflow: hidden; border: 1px solid #eee; text-align: center; }
-        .poster img { width: 100%; height: auto; display: block; }
-        .poster-info { padding: 15px; }
-        footer { padding: 60px 10%; background: #fafafa; display: flex; justify-content: space-between; border-top: 1px solid #eee; margin-top: 50px; }
-        .btn-link { display: inline-block; background: #1a1a1a; color: white; padding: 12px 30px; text-decoration: none; border-radius: 4px; font-weight: bold; }
+        .container { max-width: 1200px; margin: auto; padding: 100px 5%; text-align: center; }
+        
+        /* Two Big Selection Boxes */
+        .hub-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 50px; }
+        .hub-card { 
+            border: 2px solid #eee; 
+            padding: 80px 20px; 
+            text-decoration: none; 
+            color: #1a1a1a; 
+            border-radius: 10px; 
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .hub-card:hover { border-color: #007bff; background: #f9f9f9; transform: translateY(-5px); }
+        .hub-card h2 { font-size: 3rem; text-transform: uppercase; margin: 0; letter-spacing: 5px; }
+        .hub-card p { color: #888; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; }
+
+        @media (max-width: 768px) { .hub-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
 <nav>
     <a href="index.html">Portfolio</a>
-    <a href="credits.html">Films & Games</a>
+    <a href="credits.html">Credits</a>
     <a href="personal.html">Personal Works</a>
     <a href="scripts.html">Technical Scripts</a>
 </nav>
 
 <div class="container">
-    <div class="experience-card">
-        <h2>MPC (Moving Picture Company)</h2>
-        <span>Rigging Artist// 2022 - 2023</span>
-        <p>Specialized in creature simulation and photorealistic rigging for major feature films.</p>
-    </div>
+    <h1 style="font-size: 4rem; text-transform: uppercase; letter-spacing: -2px;">Credits</h1>
+    <p style="font-size: 1.2rem; color: #666;">Select a category to view professional work history.</p>
 
-    <h1 style="font-size: 3rem; text-transform: uppercase; letter-spacing: -1px;">Film & Game Credits</h1>
-    
-    <div class="project-grid">
-        <!-- Project 1 -->
-        <div class="poster">
-            <!-- Replace 'mufasa.jpg' with your actual image file name on GitHub -->
-            <img src="mufasa_the_lion_king_xlg.jpg" alt="Mufasa">
-            <div class="poster-info">
-                <h3>Mufasa: The Lion King (2024)</h3>
-                <p>Rigging Artist</p>
-            </div>
-        </div>
-        
-        <!-- Add more projects by copying the block above -->
+    <div class="hub-grid">
+        <!-- LINK TO FILMS -->
+        <a href="films.html" class="hub-card">
+            <h2>FILMS</h2>
+            <p>Feature Films & Animation</p>
+        </a>
+
+        <!-- LINK TO GAMES -->
+        <a href="games.html" class="hub-card">
+            <h2>GAMES</h2>
+            <p>Cinematics & In-Game Rigging</p>
+        </a>
     </div>
 </div>
-
-<footer>
-    <div>
-        <h3>Contact</h3>
-        <p>Email: <b>biplabmohanty.td@gmail.com</b></p>
-    </div>
-    <div style="text-align: right;">
-        <a href="https://www.linkedin.com/in/biplab-mohanty-5377a1240/" class="btn-link">CONNECT ON LINKEDIN</a>
-    </div>
-</footer>
 
 </body>
 </html>
